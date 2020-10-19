@@ -92,6 +92,7 @@ def setup_mephisto(launch_config):
 
     try:
         arg_string += (
+            # f'--annotation-indices-jsonl {TASK_DIRECTORY}/task_config/annotation_indices_example.jsonl '
             f'--annotation-indices-jsonl {launch_config.ANNOTATION_INDICES_JSONL} '
         )
     except Exception:
